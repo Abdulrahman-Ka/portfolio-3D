@@ -1,9 +1,12 @@
-type NavLinks = {
+type NavLinksType = {
   name: string;
   link: string;
 };
+export type IconsListType = {
+  imgPath: string;
+};
 
-const navLinks: NavLinks[] = [
+const navLinks: NavLinksType[] = [
   {
     name: "Work",
     link: "#work",
@@ -40,7 +43,7 @@ const counterItems = [
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
-const logoIconsList = [
+const logoIconsList: IconsListType[] = [
   {
     imgPath: "/images/logos/company-logo-1.png",
   },
