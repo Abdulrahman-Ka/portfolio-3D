@@ -5,6 +5,11 @@ type NavLinksType = {
 export type IconsListType = {
   imgPath: string;
 };
+type abilitiesType = {
+  imgPath: string;
+  title: string;
+  desc: string;
+};
 
 const navLinks: NavLinksType[] = [
   {
@@ -79,7 +84,7 @@ const logoIconsList: IconsListType[] = [
   },
 ];
 
-const abilities = [
+const abilities: abilitiesType[] = [
   {
     imgPath: "/images/seo.png",
     title: "Quality Focus",
@@ -153,7 +158,16 @@ const techStackIcons = [
   },
 ];
 
-const expCards = [
+export type ExpCardType = {
+  review: string;
+  imgPath: string;
+  logoPath: string;
+  title: string;
+  date: string;
+  responsibilities: string[];
+};
+
+const expCards: ExpCardType[] = [
   {
     review:
       "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
