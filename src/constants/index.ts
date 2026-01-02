@@ -125,7 +125,14 @@ const techStackImgs = [
   },
 ];
 
-const techStackIcons = [
+export type TechStackIconsType = {
+  name: string;
+  modelPath: string;
+  scale: number;
+  rotation: number[];
+};
+
+const techStackIcons: TechStackIconsType[] = [
   {
     name: "React Developer",
     modelPath: "/models/react_logo-transformed.glb",
